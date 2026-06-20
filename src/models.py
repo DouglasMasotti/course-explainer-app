@@ -1,9 +1,10 @@
 class Course:
-    def __init__(self, title, description, instructor, duration):
+    def __init__(self, title, description, instructor, duration, topics=None):
         self.title = title
         self.description = description
         self.instructor = instructor
         self.duration = duration
+        self.topics = topics or []
 
     def __repr__(self):
         return f"<Course {self.title} by {self.instructor}>"
